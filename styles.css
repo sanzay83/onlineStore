@@ -1,0 +1,87 @@
+.main-body {
+  background-color: rgb(255, 208, 216);
+}
+
+/* -------------- NavBar & Header ---------------*/
+.header-black {
+  color: white;
+  background-color: rgb(53, 53, 53);
+  border-radius: 5px;
+  border-bottom: solid black 1px;
+}
+
+.logo-image {
+  height: 40px;
+}
+
+.fs-4copy {
+  font-family: "Aboreto";
+  font-weight: 600;
+  color: rgb(255, 167, 182);
+}
+
+.active-defined {
+  background-color: rgb(255, 167, 182);
+  font-weight: 600;
+  color: black;
+}
+
+.active-defined:hover {
+  color: black;
+}
+
+.nav-design {
+  font-weight: 400;
+  color: white;
+}
+
+.nav-design:hover {
+  color: rgb(255, 167, 182);
+  border-bottom: solid rgb(255, 167, 182) 2px;
+  border-radius: 0;
+}
+
+.dropdown-menu-background {
+  background-color: rgb(255, 167, 182);
+  border-radius: 10px;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(255, 223, 223);
+  border: solid 1px rgb(255, 105, 105);
+  border-radius: 30px;
+}
+
+.carousel-container {
+  padding: 15px;
+}
+
+/* -------------- CARD ---------------*/
+
+.card-container {
+  padding: 30px 1%;
+}
+
+.card-size {
+  width: 18rem;
+  margin: 10px;
+}
+
+/* -------------- Settings for Phones ---------------*/
+
+@media only screen and (min-width: 800px) {
+  .dropdown-disable {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .nav-pills-disable {
+    display: none;
+  }
+
+  .card-size {
+    width: 43%;
+    margin: 10px;
+  }
+}

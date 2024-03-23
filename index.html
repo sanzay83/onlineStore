@@ -22,6 +22,10 @@
       href="https://fonts.googleapis.com/css?family=Aboreto"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia"
+      rel="stylesheet"
+    />
   </head>
   <!-- ------------------HEADER & MENU-------<div id="header-section"></div>
     <script src="header.js"></script>------------- -->
@@ -48,10 +52,10 @@
             </button>
             <ul class="dropdown-menu dropdown-menu-background">
               <li class="nav-item">
-                <a href="#" class="dropdown-item" aria-current="page">Home</a>
+                <a href="/" class="dropdown-item" aria-current="page">Home</a>
               </li>
               <li class="nav-item">
-                <a href="./pages/" class="dropdown-item">Shoes</a>
+                <a href="#" class="dropdown-item">Shoes</a>
               </li>
               <li class="nav-item">
                 <a href="#" class="dropdown-item">Bags</a>
@@ -60,19 +64,21 @@
                 <a href="#" class="dropdown-item">Western Wears</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="dropdown-item">About</a>
+                <a href="#" class="dropdown-item" onclick="AboutContent()"
+                  >About</a
+                >
               </li>
             </ul>
           </div>
 
           <ul class="nav nav-pills nav-pills-disable">
             <li class="nav-item">
-              <a href="#" class="nav-link active-defined" aria-current="page"
+              <a href="/" class="nav-link nav-design" aria-current="page"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a href="./pages/" class="nav-link nav-design">Shoes</a>
+              <a href="#" class="nav-link nav-design">Shoes</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link nav-design">Bags</a>
@@ -81,7 +87,7 @@
               <a href="#" class="nav-link nav-design">Western Wears</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-design" onclick="bodyContent()">About</a>
+              <a class="nav-link nav-design" onclick="AboutContent()">About</a>
             </li>
           </ul>
         </header>
@@ -153,7 +159,7 @@
               />
               <div class="container">
                 <div class="carousel-caption text-end">
-                  <h1>One more for good measure.</h1>
+                  <h1>Fashion at your feet daily.</h1>
                   <p>
                     Some representative placeholder content for the third slide
                     of this carousel.
@@ -194,7 +200,7 @@
       </div>
 
       <!-- ------------------- FOOTER STARTED ------------------- -->
-      <div class="container">
+      <div class="container footer-container">
         <footer class="d-flex flex-wrap py-3 mb-4 border-bottom">
           <div
             class="flex-grow-1 mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
@@ -205,21 +211,32 @@
 
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+              <a href="/" class="nav-link px-2 fs-4 text-body-secondary"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-body-secondary">Shoes</a>
+              <a href="#" class="nav-link px-2 fs-4 text-body-secondary"
+                >Shoes</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-body-secondary">Bags</a>
+              <a href="#" class="nav-link px-2 fs-4 text-body-secondary"
+                >Bags</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-body-secondary"
+              <a href="#" class="nav-link px-2 fs-4 text-body-secondary"
                 >Western Wears</a
               >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+              <a
+                href="#"
+                class="nav-link px-2 fs-4 text-body-secondary"
+                onclick="AboutContent()"
+                >About</a
+              >
             </li>
           </ul>
         </footer>

@@ -1,4 +1,5 @@
 .main-body {
+  margin-bottom: -30px;
   background-color: rgb(255, 208, 216);
 }
 
@@ -18,16 +19,6 @@
   font-family: "Aboreto";
   font-weight: 600;
   color: rgb(255, 167, 182);
-}
-
-.active-defined {
-  background-color: rgb(255, 167, 182);
-  font-weight: 600;
-  color: black;
-}
-
-.active-defined:hover {
-  color: black;
 }
 
 .nav-design {
@@ -63,6 +54,7 @@
   border-top: solid 2px;
   border-bottom: solid 2px;
   text-align: center;
+  font-weight: 900;
 }
 
 .card-container {
@@ -72,6 +64,19 @@
 .card-size {
   width: 18rem;
   margin: 10px;
+}
+
+.about-content {
+  margin: 20px 0;
+  font-family: "Sofia";
+  font-style: italic;
+  font-weight: 500;
+  color: rgb(250, 47, 81);
+  font-size: 30px;
+}
+
+.footer-container {
+  border-top: solid 2px white;
 }
 
 /* -------------- Settings for Phones ---------------*/

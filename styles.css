@@ -57,6 +57,13 @@
 }
 
 /* -------------- CARD ---------------*/
+.card-header {
+  margin-top: 20px;
+  color: rgb(255, 86, 114);
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  text-align: center;
+}
 
 .card-container {
   padding: 30px 1%;

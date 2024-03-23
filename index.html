@@ -17,6 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="./about.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Aboreto"
       rel="stylesheet"
@@ -80,90 +81,129 @@
               <a href="#" class="nav-link nav-design">Western Wears</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link nav-design">About</a>
+              <a class="nav-link nav-design" onclick="bodyContent()">About</a>
             </li>
           </ul>
         </header>
       </div>
 
       <!-- -----------HEADER & MENU ENDED-------------------- -->
-      <!-- ----------------- CAROUSEL------------------------ -->
-      <div
-        id="carouselExampleInterval"
-        class="container carousel-container slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img
-              src="./images/sandals/ladies_sandal1.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-              src="./images/sandals/ladies_sandal2.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-              src="./images/sandals/ladies_sandal3.jpeg"
-              class="d-block w-100"
-              alt="..."
-            />
+
+      <div id="body-contents">
+        <!-- ----------------- CAROUSEL------------------------ -->
+        <div
+          id="carouselExampleInterval"
+          class="carousel-container slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="./images/sandals/carousel-image1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>Walk your path with style.</h1>
+                  <p>
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./images/sandals/carousel-image2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>Shoes: where comfort meets fashion.</h1>
+                  <p>
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./images/sandals/carousel-image3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>Sole mates for every journey.</h1>
+                  <p>
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./images/sandals/carousel-image4.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>One more for good measure.</h1>
+                  <p>
+                    Some representative placeholder content for the third slide
+                    of this carousel.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- ----------------- CAROUSEL ENDs-------------------- -->
+        <!-- ----------------- CAROUSEL ENDs-------------------- -->
 
-      <!-- ----------------- CONTENT BOX---------------------- -->
+        <!-- ----------------- CONTENT BOX---------------------- -->
 
-      <div class="container">
-        <span class="fs-4 fs-4copy"> OUR TOP PICKS </span>
-      </div>
+        <div class="container">
+          <div class="fs-4 fs-4copy card-header">OUR TOP PICKS</div>
+        </div>
 
-      <div class="container card-container" id="content"></div>
+        <div class="container card-container" id="content"></div>
 
-      <script>
-        document.getElementById("content").innerHTML = myFunction();
+        <script>
+          document.getElementById("content").innerHTML = myFunction();
 
-        function myFunction() {
-          let my = 200;
-          data = "";
-          for (let i = 1; i < 10; i++) {
-            data += `<div class="card d-inline-flex card-size">
+          function myFunction() {
+            data = "";
+            for (let i = 1; i < 10; i++) {
+              data += `<div class="card d-inline-flex card-size">
                     <img src="./images/sandals/ladies_sandal${i}.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Card title ${i}</h5>
                     </div>
                   </div>`;
-          }
+            }
 
-          return data;
-        }
-      </script>
+            return data;
+          }
+        </script>
+      </div>
 
       <!-- ------------------- FOOTER STARTED ------------------- -->
       <div class="container">
-        <footer
-          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-        >
-          <p class="col-md-4 mb-0 text-body-secondary">© 2024 INARI</p>
-
-          <a
-            href="/"
-            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        <footer class="d-flex flex-wrap py-3 mb-4 border-bottom">
+          <div
+            class="flex-grow-1 mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
           >
-            <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
+            <img class="logo-image" src="logo.png" />
+            <span class="fs-4">© 2024 INARI </span>
+          </div>
 
-          <ul class="nav col-md-4 justify-content-end">
+          <ul class="nav nav-pills">
             <li class="nav-item">
               <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
             </li>
@@ -185,6 +225,7 @@
         </footer>
       </div>
       <!-- ------------------- FOOTER END------------------- -->
+
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

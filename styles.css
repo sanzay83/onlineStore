@@ -76,7 +76,27 @@
 }
 
 .footer-container {
+  background-color: rgb(53, 53, 53);
+  padding: 50px;
   border-top: solid 2px white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-family: "Aboreto";
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+.footer-nav-link {
+  color: white;
+}
+
+.footer-nav-link:hover {
+  color: rgb(255, 121, 121);
+  border-bottom: solid 2px rgb(187, 162, 162);
 }
 
 /* -------------- Settings for Phones ---------------*/
@@ -87,7 +107,7 @@
   }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 767px) {
+@media only screen and (min-width: 433px) and (max-width: 767px) {
   .nav-pills-disable {
     display: none;
   }
@@ -96,9 +116,14 @@
     width: 28%;
     margin: 10px;
   }
+
+  .grid-container {
+    grid-template-columns: auto;
+    margin: 5px;
+  }
 }
 
-@media only screen and (max-width: 424px) {
+@media only screen and (max-width: 432px) {
   .nav-pills-disable {
     display: none;
   }
@@ -106,5 +131,10 @@
   .card-size {
     width: 43%;
     margin: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: auto;
+    margin: 5px;
   }
 }

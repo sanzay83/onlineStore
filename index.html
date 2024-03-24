@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="./about.js"></script>
     <link
@@ -27,17 +31,16 @@
       rel="stylesheet"
     />
   </head>
-  <!-- ------------------HEADER & MENU-------<div id="header-section"></div>
-    <script src="header.js"></script>------------- -->
+  <!-- ------------------HEADER & MENU-------------------- -->
   <body>
     <div class="main-body">
       <div class="container-fluid header-black sticky-top">
         <header class="d-flex flex-wrap py-3 mb-4 border-bottom">
           <a
-            href="/"
+            href="#"
             class="flex-grow-1 mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
           >
-            <img class="logo-image" src="logo.png" />
+            <img class="logo-image" src="./images/icons/logo.png" />
             <span class="fs-4 fs-4copy"> INARI </span>
           </a>
 
@@ -52,20 +55,53 @@
             </button>
             <ul class="dropdown-menu dropdown-menu-background">
               <li class="nav-item">
-                <a href="/" class="dropdown-item" aria-current="page">Home</a>
+                <a href="/" class="dropdown-item" aria-current="page">
+                  <img
+                    height="22px"
+                    width="22px"
+                    src="./images/icons/house-heart-icon.svg"
+                  />
+                  Home</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="dropdown-item">Shoes</a>
+                <a href="#" class="dropdown-item">
+                  <img
+                    height="22px"
+                    width="22px"
+                    src="./images/icons/sandal-icon.svg"
+                  />
+                  Shoes</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="dropdown-item">Bags</a>
+                <a href="#" class="dropdown-item">
+                  <img
+                    height="22px"
+                    width="22px"
+                    src="./images/icons/bag-icon.svg"
+                  />
+                  Bags</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="dropdown-item">Western Wears</a>
+                <a href="#" class="dropdown-item">
+                  <img
+                    height="22px"
+                    width="22px"
+                    src="./images/icons/dress-icon.svg"
+                  />
+                  Western Wears</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="dropdown-item" onclick="AboutContent()"
-                  >About</a
+                <a href="#" class="dropdown-item" onclick="AboutContent()">
+                  <img
+                    height="22px"
+                    width="22px"
+                    src="./images/icons/book-icon.svg"
+                  />
+                  About</a
                 >
               </li>
             </ul>
@@ -73,21 +109,55 @@
 
           <ul class="nav nav-pills nav-pills-disable">
             <li class="nav-item">
-              <a href="/" class="nav-link nav-design" aria-current="page"
-                >Home</a
+              <a href="/" class="nav-link nav-design" aria-current="page">
+                <img
+                  height="22px"
+                  width="22px"
+                  src="./images/icons/house-heart-icon.svg"
+                  class="icon-color"
+                />
+                Home</a
               >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link nav-design">Shoes</a>
+              <a href="#" class="nav-link nav-design">
+                <img
+                  height="22px"
+                  width="22px"
+                  src="./images/icons/heel-sandal-icon.svg"
+                />
+                Shoes</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link nav-design">Bags</a>
+              <a href="#" class="nav-link nav-design">
+                <img
+                  height="22px"
+                  width="22px"
+                  src="./images/icons/bag-icon.svg"
+                />
+                Bags</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link nav-design">Western Wears</a>
+              <a href="#" class="nav-link nav-design">
+                <img
+                  height="22px"
+                  width="22px"
+                  src="./images/icons/dress-icon.svg"
+                />
+                Western Wears</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-design" onclick="AboutContent()">About</a>
+              <a class="nav-link nav-design" onclick="AboutContent()">
+                <img
+                  height="22px"
+                  width="22px"
+                  src="./images/icons/book-icon.svg"
+                />
+                About</a
+              >
             </li>
           </ul>
         </header>
@@ -97,78 +167,7 @@
 
       <div id="body-contents">
         <!-- ----------------- CAROUSEL------------------------ -->
-        <div
-          id="carouselExampleInterval"
-          class="carousel-container slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img
-                src="./images/sandals/carousel-image1.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>Walk your path with style.</h1>
-                  <p>
-                    Some representative placeholder content for the third slide
-                    of this carousel.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="./images/sandals/carousel-image2.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>Shoes: where comfort meets fashion.</h1>
-                  <p>
-                    Some representative placeholder content for the third slide
-                    of this carousel.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="./images/sandals/carousel-image3.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>Sole mates for every journey.</h1>
-                  <p>
-                    Some representative placeholder content for the third slide
-                    of this carousel.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="./images/sandals/carousel-image4.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>Fashion at your feet daily.</h1>
-                  <p>
-                    Some representative placeholder content for the third slide
-                    of this carousel.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div id="myCarousel"></div>
 
         <!-- ----------------- CAROUSEL ENDs-------------------- -->
 
@@ -179,24 +178,6 @@
         </div>
 
         <div class="container card-container" id="content"></div>
-
-        <script>
-          document.getElementById("content").innerHTML = myFunction();
-
-          function myFunction() {
-            data = "";
-            for (let i = 1; i < 10; i++) {
-              data += `<div class="card d-inline-flex card-size">
-                    <img src="./images/sandals/ladies_sandal${i}.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title ${i}</h5>
-                    </div>
-                  </div>`;
-            }
-
-            return data;
-          }
-        </script>
       </div>
 
       <!-- ------------------- FOOTER STARTED ------------------- -->
@@ -205,7 +186,7 @@
           <div
             class="flex-grow-1 mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
           >
-            <img class="logo-image" src="logo.png" />
+            <img class="logo-image" src="./images/icons/logo.png" />
             <span class="fs-4">© 2024 INARI </span>
           </div>
 
@@ -242,7 +223,8 @@
         </footer>
       </div>
       <!-- ------------------- FOOTER END------------------- -->
-
+      <script src="./carousel.js"></script>
+      <script src="./card.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

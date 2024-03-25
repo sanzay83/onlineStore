@@ -2,64 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="../logo.png" />
-    <title>INARI</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-
-    <script src="./about.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Aboreto"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Sofia"
-      rel="stylesheet"
-    />
+    <title>INARI'S CLOSET</title>
+    <!---------------------------Importing Styles------------------------------>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <!-- ------------------HEADER & MENU-------------------- -->
   <body>
-    <div class="main-body">
-      <div id="header-section"></div>
-      <!-- -----------HEADER & MENU ENDED-------------------- -->
-      <div id="body-contents">
-        <!-- ----------------- CAROUSEL------------------------ -->
-        <div id="myCarousel"></div>
-        <!-- ----------------- CAROUSEL ENDs-------------------- -->
-        <!-- ----------------- CONTENT BOX---------------------- -->
-        <div class="container">
-          <div class="fs-4 fs-4copy card-header">OUR TOP PICKS</div>
-        </div>
-
-        <div class="container card-container" id="content"></div>
-      </div>
-      <!-- ------------------- FOOTER STARTED ------------------- -->
-      <div id="footer-section"></div>
-      <!-- ------------------- FOOTER END------------------- -->
-      <script src="./header.js"></script>
-      <script src="./carousel.js"></script>
-      <script src="./card.js"></script>
-      <script src="./footer.js"></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-      ></script>
-    </div>
+    <div class="grid-container">
+      <!-------------------------------HEADER---------------------------------->
+      <div id="header-contents" class="item1"></div>
+      <!--------------------------------BODY----------------------------------->
+      <div id="body-contents" class="item2"></div>
+      <!-------------------------------FOOTER---------------------------------->
+      <div id="footer-contents" class="item3"></div>
+      <!-------------------------------SCRIPT---------------------------------->
+      <script src="./JScripts/header.js"></script>
+      <script src="./JScripts/footer.js"></script>
+      <script src="./JScripts/home.js"></script>
+      <script src="./JScripts/shoes.js"></script>
+      <script src="./JScripts/bag.js"></script>
+      <script src="./JScripts/wears.js"></script>
+      <script src="./JScripts/about.js"></script>
   </body>
 </html>

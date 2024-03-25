@@ -6,7 +6,8 @@ function HomeContent(x) {
   } else {
     bodyData = ``;
     const carouselData = CarouselContent();
-    bodyData += carouselData + `<h1>shop our top collection</h1>`;
+    const cardData = cardContent();
+    bodyData += carouselData + cardData;
     return bodyData;
   }
 }
@@ -15,8 +16,8 @@ function CarouselContent() {
   const quotes = [
     "Walk your path with style.",
     "Step into your dreams boldly.",
-    "Shoes: where comfort meets fashion.",
     "Sole mates for every journey.",
+    "Shoes: where comfort meets fashion.",
     "Strut your stuff in confidence.",
     "Walk with purpose, wear elegance.",
     "Shoes: stepping stones of expression.",
@@ -29,7 +30,7 @@ function CarouselContent() {
   let data = `<div class="slideshow-container">`;
   for (let i = 1; i <= image; i++) {
     data += `<div class="mySlides fade">
-      <img src="./images/sandals/carousel-image${i}.jpg" style="width:100%">
+      <img src="./images/carousel/carousel-image${i}.jpg" style="width:100%">
       <div class="text">${quotes[i]}</div>
     </div>`;
   }
@@ -40,7 +41,6 @@ function CarouselContent() {
 /* ----------------------Carousel Funtion------------------------- */
 let slideIndex = 0;
 showSlides();
-
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -53,4 +53,25 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+/* ----------------------Carousel Funtion------------------------- */
+function cardContent() {
+  tags = ["", "Shoes Collection", "Bags Collection", "Western Wears", "Sale"];
+  data = `<div class="card-container">
+  <div class="card-title">Shop our Collection</div>
+  <div class="grid-container-card">`;
+  for (i = 1; i < 5; i++) {
+    data += `<div class="card">
+        <img
+          src="../images/homeCollection/home${i}.jpg"
+          alt="Avatar"
+          style="width: 100%"
+        />
+        <p>${tags[i]}</p>
+      </div>`;
+  }
+  data += `</div>
+  </div>`;
+  return data;
 }

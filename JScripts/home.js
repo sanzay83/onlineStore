@@ -5,7 +5,7 @@ function HomeContent(x) {
     document.getElementById("body-contents").innerHTML = HomeContent("false");
   } else {
     return `<img
-  src="../images/main.jpg"
+  src="/images/main.jpg"
   width="100%"
   class="card-img-top"
   alt="..."

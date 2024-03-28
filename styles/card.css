@@ -1,8 +1,9 @@
 .card-container {
-  margin-left: 1%;
+  margin: 30px 0 30px 1%;
 }
 
 .card-title {
+  margin-bottom: 30px;
   padding-left: 15px;
   font-style: bold;
   font-size: 40px;
@@ -39,7 +40,7 @@
   }
 
   .grid-container-card {
-    grid-template-columns: 32% 32% 32%;
+    grid-template-columns: 49% 49%;
   }
 
   .grid-container-card > div {
@@ -50,9 +51,7 @@
   .card-title {
     font-size: 16px;
   }
-  .grid-container-card {
-    grid-template-columns: 49% 49%;
-  }
+
   .grid-container-card > div {
     font-size: 16px;
   }

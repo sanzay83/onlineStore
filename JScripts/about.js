@@ -29,5 +29,8 @@ function AboutContent() {
     covered. Join us on this stylish journey and discover the perfect
     combination of fashion, comfort, and quality.
   </p>
+
+  <h3>If you have any questions or concern about our product please contact us on Instagram. <br>Thank you ❤ </h3>
+  <div class="signature">-Inari's closet </div>
 </div>`;
 }

@@ -1,6 +1,7 @@
 @import "header.css";
 @import "body.css";
 @import "footer.css";
+@import "about.css";
 @import url(https://fonts.googleapis.com/css?family=Aboreto);
 body {
   margin: 0px;
@@ -27,7 +28,6 @@ body {
 
 .grid-container > div {
   text-align: center;
-  padding: 10px 0;
 }
 
 .flex-container {

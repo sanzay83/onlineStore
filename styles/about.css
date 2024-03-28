@@ -1,0 +1,19 @@
+.about-content {
+  text-align: left;
+  font-size: 30px;
+  margin: 10px 10%;
+}
+
+.signature {
+  font-size: 20px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 425px) {
+  .about-content {
+    text-align: left;
+    font-size: 16px;
+    margin: 5px 2%;
+  }
+}

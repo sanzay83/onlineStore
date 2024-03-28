@@ -21,10 +21,10 @@ function deskFunction() {
 function header() {
   return `<div class="flex-container">
           <div style="flex-grow: 1">
-            <img height="65px" width="80px" src="./images/icons/logo.png" />
+          <a onclick="HomeContent('true')"><img height="65px" width="80px" src="./images/icons/logo.png" /></a>
           </div>
           <div style="flex-grow: 1">
-            <div class="logo-name">INARI'S CLOSET</div>
+          <a onclick="HomeContent('true')"><div class="logo-name">INARI'S CLOSET</div></a>
           </div>
           <div style="flex-grow: 4">
             <div class="menu-item">

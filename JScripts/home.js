@@ -59,18 +59,25 @@ function showSlides() {
 /* ----------------------Carousel Funtion------------------------- */
 function cardContent() {
   tags = ["", "Shoes Collection", "Bags Collection", "Western Wears", "Sale"];
+  links = [
+    "",
+    "ShoesContent()",
+    "BagsContent()",
+    "WearsContent()",
+    "AboutContent()",
+  ];
   data = `<div class="card-container">
   <div class="card-title">Shop our Collection</div>
   <div class="grid-container-card">`;
   for (i = 1; i < 5; i++) {
-    data += `<div class="card">
+    data += `<a onclick="${links[i]}"><div class="card">
         <img
           src="./images/homeCollection/home${i}.jpg"
           alt="Avatar"
           style="width: 100%"
         />
         <p>${tags[i]}</p>
-      </div>`;
+      </div></a>`;
   }
   data += `</div>
   </div>`;

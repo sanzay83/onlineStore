@@ -10,52 +10,29 @@
 </head>
 
 <body>
-  <div class="grid-container">
-    <!-------------------------------HEADER---------------------------------->
-    <div id="header-contents" class="item1"></div>
-    <!--------------------------------BODY----------------------------------->
-    <div id="body-contents" class="item2"></div>
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content" id="imgId">
+    </div>
+  </div>
 
-    <img id="myImg" src="./images/main.jpg" alt="Northern Lights, Norway" width="300" height="200">
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-    <script>
-      // Get the modal
-      var modal = document.getElementById('myModal');
-      
-      // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById('myImg');
-      var modalImg = document.getElementById("img01");
-      var captionText = document.getElementById("caption");
-      img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-      }
-      
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() { 
-        modal.style.display = "none";
-      }
-      </script>
-    <!-------------------------------FOOTER---------------------------------->
-    <div id="footer-contents" class="item3"></div>
-    <!-------------------------------SCRIPT--------------------------------->
-    <script src="./JScripts/header.js"></script>
-    <script src="./JScripts/footer.js"></script>
-    <script src="./JScripts/home.js"></script>
-    <script src="./JScripts/shoes.js"></script>
-    <script src="./JScripts/bag.js"></script>
-    <script src="./JScripts/wears.js"></script>
-    <script src="./JScripts/about.js"></script>
+    <div class="grid-container">
+      <!-------------------------------HEADER---------------------------------->
+      <div id="header-contents" class="item1"></div>
+      <!--------------------------------BODY----------------------------------->
+      <div id="body-contents" class="item2"></div>
+
+      <!-------------------------------FOOTER---------------------------------->
+      <div id="footer-contents" class="item3"></div>
+      <!-------------------------------SCRIPT--------------------------------->
+      <script src="./JScripts/header.js"></script>
+      <script src="./JScripts/footer.js"></script>
+      <script src="./JScripts/home.js"></script>
+      <script src="./JScripts/shoes.js"></script>
+      <script src="./JScripts/bag.js"></script>
+      <script src="./JScripts/wears.js"></script>
+      <script src="./JScripts/about.js"></script><script src="./JScripts/modal.js"></script>
 </body>
 
 </html>

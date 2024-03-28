@@ -4,10 +4,10 @@ function ShoesContent() {
   data = `<div class="card-container">
   <div class="card-title">Shoes Collection</div>
   <div class="grid-container-card">`;
-  for (i = 1; i < 20; i++) {
+  for (i = 1; i < 11; i++) {
     data += `<div class="card">
-        <img
-          src="./images/sandals/ladies_sandal1.jpg"
+        <img onclick="imageModal('./images/sandals/ladies_sandal${i}.jpg')"
+          src="./images/sandals/ladies_sandal${i}.jpg"
           alt="Avatar"
           style="width: 100%"
         />

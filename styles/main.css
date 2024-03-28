@@ -2,7 +2,9 @@
 @import "body.css";
 @import "footer.css";
 @import url(https://fonts.googleapis.com/css?family=Aboreto);
-
+body {
+  margin: 0px;
+}
 .item1 {
   grid-area: header;
 }

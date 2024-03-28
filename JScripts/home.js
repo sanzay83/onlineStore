@@ -8,7 +8,8 @@ function HomeContent(x) {
     bodyData = ``;
     const carouselData = CarouselContent();
     const cardData = cardContent();
-    bodyData += carouselData + cardData;
+    const newArrival = newArrivalContent();
+    bodyData += carouselData + cardData + newArrival;
     return bodyData;
   }
 }
@@ -81,5 +82,17 @@ function cardContent() {
   }
   data += `</div>
   </div>`;
+  return data;
+}
+
+function newArrivalContent() {
+  data = `<div class="newArrival-container">
+  <div class="newArrival-grid">
+    <img src="./images/newArrivals/102771.jpg">
+    <img src="./images/newArrivals/16847.jpg">
+    <img src="./images/newArrivals/2148752385.jpg">
+    <div class="textOnNewArrival">New Arrival</div>
+  </div>
+</div>`;
   return data;
 }

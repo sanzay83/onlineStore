@@ -1,8 +1,9 @@
 .card-container {
-  margin: 10px 2%;
+  margin-left: 1%;
 }
 
 .card-title {
+  padding-left: 15px;
   font-style: bold;
   font-size: 40px;
   text-align: left;
@@ -10,9 +11,8 @@
 
 .grid-container-card {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  gap: 10px;
-  padding: 10px;
+  grid-template-columns: 24% 24% 24% 24%;
+  gap: 1%;
 }
 
 .grid-container-card > div {
@@ -39,7 +39,7 @@
   }
 
   .grid-container-card {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 32% 32% 32%;
   }
 
   .grid-container-card > div {
@@ -51,7 +51,7 @@
     font-size: 16px;
   }
   .grid-container-card {
-    grid-template-columns: auto auto;
+    grid-template-columns: 49% 49%;
   }
   .grid-container-card > div {
     font-size: 16px;

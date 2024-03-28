@@ -7,7 +7,7 @@ function WearsContent() {
   for (i = 1; i < 20; i++) {
     data += `<div class="card">
         <img
-          src="../images/wears/wear1.jpg"
+          src="./images/wears/wear1.jpg"
           alt="Avatar"
           style="width: 100%"
         />

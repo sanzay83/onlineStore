@@ -7,7 +7,7 @@ function BagsContent() {
   for (i = 1; i < 20; i++) {
     data += `<div class="card">
         <img
-          src="../images/homeCollection/home2.jpg"
+          src="./images/homeCollection/home2.jpg"
           alt="Avatar"
           style="width: 100%"
         />

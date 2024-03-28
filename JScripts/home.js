@@ -65,7 +65,7 @@ function cardContent() {
   for (i = 1; i < 5; i++) {
     data += `<div class="card">
         <img
-          src="../images/homeCollection/home${i}.jpg"
+          src="./images/homeCollection/home${i}.jpg"
           alt="Avatar"
           style="width: 100%"
         />

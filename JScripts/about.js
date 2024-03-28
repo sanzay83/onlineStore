@@ -1,4 +1,5 @@
 function AboutContent() {
+  document.getElementById("mobile-content").style.display = "none";
   document.getElementById("body-contents").innerHTML = `<div class="container">
   <p class="about-content">
     Welcome to inari, where fashion meets functionality in

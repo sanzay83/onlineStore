@@ -1,4 +1,6 @@
 function BagsContent() {
+  document.getElementById("full-content").style.display = "none";
+  document.getElementById("mobile-content").style.display = "none";
   data = `<div class="card-container">
   <div class="card-title">Bags Collection</div>
   <div class="grid-container-card">`;

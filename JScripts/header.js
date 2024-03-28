@@ -50,7 +50,7 @@ function header() {
           </div>
           <div style="flex-grow: 1">
             <div class="small-screen-menu dropdown">
-              <a onclick="mobFunction()">☰</a>
+              <a id="hamburger" onclick="mobFunction()">☰</a>
               <div id="mobile-content" class="dropdown-content">
                 <a onclick="HomeContent('true')">Home</a>
                 <a onclick="ShoesContent()">Shoes</a>

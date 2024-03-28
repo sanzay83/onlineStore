@@ -42,7 +42,7 @@ function CarouselContent() {
 /* ----------------------Carousel Funtion------------------------- */
 let slideIndex = 0;
 showSlides();
-setInterval(showSlides, 3000);
+const showSlideIntervalId = setInterval(showSlides, 3000);
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");

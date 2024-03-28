@@ -7,7 +7,7 @@ function ShoesContent() {
   for (i = 1; i < 20; i++) {
     data += `<div class="card">
         <img
-          src="../images/sandals/ladies_sandal1.jpg"
+          src="./images/sandals/ladies_sandal1.jpg"
           alt="Avatar"
           style="width: 100%"
         />

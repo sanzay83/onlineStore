@@ -4,10 +4,10 @@ function BagsContent() {
   data = `<div class="card-container">
   <div class="card-title">Bags Collection</div>
   <div class="grid-container-card">`;
-  for (i = 1; i < 20; i++) {
+  for (i = 1; i < 5; i++) {
     data += `<div class="card">
-        <img
-          src="./images/homeCollection/home2.jpg"
+        <img onclick="imageModal('./images/bags/bag${i}.jpg')"
+          src="./images/bags/bag${i}.jpg"
           alt="Avatar"
           style="width: 100%"
         />

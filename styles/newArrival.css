@@ -18,7 +18,7 @@
 .textOnNewArrival {
   font-size: 80px;
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: textOnNewArrival 1s ease-in-out infinite alternate;

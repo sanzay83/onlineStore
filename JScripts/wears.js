@@ -4,10 +4,10 @@ function WearsContent() {
   data = `<div class="card-container">
   <div class="card-title">Wears Collection</div>
   <div class="grid-container-card">`;
-  for (i = 1; i < 20; i++) {
+  for (i = 1; i < 2; i++) {
     data += `<div class="card">
-        <img
-          src="./images/wears/wear1.jpg"
+        <img onclick="imageModal('./images/wears/wear${i}.jpg')"
+          src="./images/wears/wear${i}.jpg"
           alt="Avatar"
           style="width: 100%"
         />

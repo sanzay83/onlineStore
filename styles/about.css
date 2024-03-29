@@ -1,6 +1,6 @@
 .about-content {
   text-align: left;
-  font-size: 30px;
+  font-size: 25px;
   margin: 10px 10%;
 }
 
@@ -12,8 +12,11 @@
 
 @media only screen and (max-width: 425px) {
   .about-content {
-    text-align: left;
     font-size: 16px;
     margin: 5px 2%;
+  }
+
+  .signature {
+    font-size: 14px;
   }
 }

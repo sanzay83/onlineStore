@@ -1,53 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>PHP - Upload image to database - Example</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="form.css" rel="stylesheet" type="text/css" />
+    <title>Admin Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+
+      .hero-text button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px 25px;
+        color: black;
+        background-color: #ddd;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .hero-text button:hover {
+        background-color: #555;
+        color: white;
+      }
+    </style>
   </head>
-
   <body>
-    <div id="id01" class="bg modal" style="display: block">
-      <form
-        class="modal-content animate"
-        action="/action_page.php"
-        method="post"
-      >
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input
-            type="text"
-            placeholder="Enter Username"
-            name="uname"
-            required=""
-          />
-          <label for="psw"><b>Password</b></label>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            required=""
-          />
-
-          <button type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember" /> Remember
-            me
-          </label>
-        </div>
-      </form>
-    </div>
-
-    <div class="phppot-container">
-      <h1>Upload image to database:</h1>
-      <form action="upload.php" method="post" enctype="multipart/form-data">
-        <div class="row">
-          <input type="file" name="image" accept="image/*" />
-          <input type="submit" value="Upload" />
-        </div>
-      </form>
-
-      <h2>Uploaded Image (Displayed from the database)</h2>
+    <div class="bg">
+      <div class="hero-text">
+        <h1>Hello, Welcome to Admin Panel!</h1>
+        <h2>Please login</h2>
+        <a href="./Login.php"><button>Login</button></a>
+      </div>
     </div>
   </body>
 </html>

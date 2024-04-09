@@ -1,0 +1,29 @@
+.footer-container {
+  background-color: rgb(63, 53, 53);
+  padding: 10px;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+.footer-fonts {
+  color: white;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-container {
+    padding: 1px;
+  }
+
+  .footer-container a {
+    font-size: 12px;
+  }
+
+  .footer-fonts {
+    font-size: 12px;
+  }
+}
